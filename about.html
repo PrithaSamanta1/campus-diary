@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About System - Campus Diary (SCRTMS)</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Site Navbar -->
+    <nav class="site-navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="navbar-brand-logo">
+                <i class="fas fa-book-bookmark text-primary"></i> Campus Diary
+            </a>
+
+            <div class="d-flex align-items-center gap-2">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About System</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="login.html" class="btn btn-outline-primary btn-sm px-3 ms-1">Login</a>
+                <a href="register.html" class="btn btn-primary btn-sm px-3">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About System Content Section -->
+    <div class="container py-5">
+        <div class="max-w-900 mx-auto">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary-subtle text-primary fw-bold text-uppercase px-3 py-2 rounded-pill">SRS Specifications</span>
+                <h1 class="display-5 fw-bold mt-3">Smart Campus Resource &amp; Task Management System</h1>
+                <p class="lead text-secondary">A centralized web platform replacing manual tracking across paper notes, Excel sheets, and messaging groups.</p>
+            </div>
+
+            <!-- Overview Cards -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card-custom h-100 p-4">
+                        <div class="stat-icon-wrapper indigo mb-3"><i class="fas fa-user-graduate"></i></div>
+                        <h5 class="fw-bold">Student Workspace</h5>
+                        <p class="text-secondary small mb-0">Track course assignments with color-coded deadline indicators, monitor task completion statuses, read announcements, and access resources.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom h-100 p-4">
+                        <div class="stat-icon-wrapper emerald mb-3"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h5 class="fw-bold">Teacher Portal</h5>
+                        <p class="text-secondary small mb-0">Assign tasks directly to students, track individual completion rates, upload lecture study materials, and publish official class announcements.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom h-100 p-4">
+                        <div class="stat-icon-wrapper purple mb-3"><i class="fas fa-user-shield"></i></div>
+                        <h5 class="fw-bold">Admin Supervision</h5>
+                        <p class="text-secondary small mb-0">Manage system user accounts, audit real-time activity logs, enforce resource conflict-prevention algorithms, and view analytics charts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Functional Modules Section -->
+            <div class="card-custom p-4 mb-5">
+                <h4 class="fw-bold mb-4"><i class="fas fa-cubes text-primary me-2"></i> System Modules &amp; Functional Breakdown</h4>
+                
+                <div class="mb-4">
+                    <h6 class="fw-bold text-primary"><i class="fas fa-check-circle me-2"></i> Module 1: Landing &amp; Authentication</h6>
+                    <p class="text-secondary small">Handles role-based authentication (Student, Teacher, Admin), user registration, password recovery, client-side input validation, and LocalStorage state persistence.</p>
+                </div>
+
+                <div class="mb-4">
+                    <h6 class="fw-bold text-primary"><i class="fas fa-check-circle me-2"></i> Module 2 &amp; 3: Task &amp; Coursework Management</h6>
+                    <p class="text-secondary small">Enables teachers to assign coursework tasks with priorities (High, Medium, Low) and deadlines. Allows students to update status from Pending to In Progress and Completed.</p>
+                </div>
+
+                <div class="mb-4">
+                    <h6 class="fw-bold text-primary"><i class="fas fa-check-circle me-2"></i> Module 4: Resource Booking &amp; Collision Prevention</h6>
+                    <p class="text-secondary small">Tracks availability for Classrooms, Computer Labs, Science Labs, and Seminar Halls. Features an automated collision-prevention algorithm to prevent double-booking the same room and time slot.</p>
+                </div>
+
+                <div>
+                    <h6 class="fw-bold text-primary"><i class="fas fa-check-circle me-2"></i> Module 5: Admin Panel &amp; Activity Audit Logs</h6>
+                    <p class="text-secondary small">Provides full control over user accounts, detailed audit logs capturing every user action, and Chart.js analytics reports showing user distribution and resource usage.</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="login.html" class="btn btn-primary btn-lg px-5">
+                    <i class="fas fa-sign-in-alt me-2"></i> Access Portal Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5 col-md-6">
+                    <a href="index.html" class="footer-brand">
+                        <i class="fas fa-book-bookmark text-primary"></i> Campus Diary
+                    </a>
+                    <p class="text-secondary small mt-2 pe-lg-4">
+                        Smart Campus Resource &amp; Task Management System (SCRTMS) — Centralizing academic tasks, facility reservations, announcements, and administration.
+                    </p>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-3 offset-lg-1 footer-links">
+                    <h6>Quick Links</h6>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About System</a>
+                    <a href="features.html">Features</a>
+                    <a href="login.html">Sign In</a>
+                    <a href="register.html">Register</a>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-3 footer-links">
+                    <h6>System Modules</h6>
+                    <a href="login.html">Student Task Workspace</a>
+                    <a href="login.html">Teacher Assignment Portal</a>
+                    <a href="login.html">Resource Booking Manager</a>
+                    <a href="login.html">Campus Notice Board</a>
+                    <a href="login.html">Admin Supervision &amp; Logs</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="mb-0">Campus Diary &copy; 2026 • Smart Campus Resource &amp; Task Management System (SCRTMS). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

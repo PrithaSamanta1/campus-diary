@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Diary - Smart Campus Resource &amp; Task Management System</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       SITE NAVBAR
+       ========================================================================== -->
+  <nav class="site-navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="navbar-brand-logo">
+        <i class="fas fa-book-bookmark text-primary"></i> Campus Diary
+      </a>
+
+      <div class="d-flex align-items-center gap-2">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About System</a>
+        <a href="features.html" class="nav-link">Features</a>
+        <a href="login.html" class="btn btn-outline-primary btn-sm px-3 ms-1">Sign In</a>
+        <a href="register.html" class="btn btn-primary btn-sm px-3">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section">
+    <div class="text-center mb-5">
+      <div class="display-1 mb-2">📖</div>
+      <h1 class="hero-brand-title display-3">Smart Campus Resource &amp; Task Management System</h1>
+      <p class="hero-tagline">
+        A unified, role-based platform designed for educational institutions to centralize coursework assignments,
+        digital resource bookings, and campus announcements.
+      </p>
+      <div class="d-flex justify-content-center gap-3 mt-4">
+        <a href="login.html" class="btn btn-primary btn-lg px-4 shadow-sm">
+          <i class="fas fa-rocket me-2"></i> Get Started
+        </a>
+        <a href="about.html" class="btn btn-outline-secondary btn-lg px-4">
+          <i class="fas fa-info-circle me-2"></i> Explore System
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Demo Launcher Card -->
+    <div class="hero-demo-card">
+      <h5 class="text-center fw-bold mb-4"><i class="fas fa-bolt text-warning me-2"></i> Quick Demo Access (One-Click
+        Role Launch)</h5>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <button class="demo-role-btn w-100 p-3 text-start" onclick="app.handleDemoLogin('student')">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <i class="fas fa-user-graduate text-primary fs-4"></i>
+              <strong class="fs-6">Student Portal</strong>
+            </div>
+            <small class="text-muted d-block">Track assignments, deadlines, read notices &amp; view resource
+              status.</small>
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button class="demo-role-btn w-100 p-3 text-start" onclick="app.handleDemoLogin('teacher')">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <i class="fas fa-chalkboard-teacher text-success fs-4"></i>
+              <strong class="fs-6">Teacher Portal</strong>
+            </div>
+            <small class="text-muted d-block">Assign coursework tasks to students &amp; publish lecture
+              announcements.</small>
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button class="demo-role-btn w-100 p-3 text-start" onclick="app.handleDemoLogin('admin')">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <i class="fas fa-user-shield text-danger fs-4"></i>
+              <strong class="fs-6">Admin Portal</strong>
+            </div>
+            <small class="text-muted d-block">Manage user accounts, audit activity logs &amp; inspect analytics
+              reports.</small>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT SECTION
+       ========================================================================== -->
+  <section class="about-section" id="aboutSection">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary-subtle text-primary fw-bold text-uppercase px-3 py-2 rounded-pill">System
+          Overview</span>
+        <h2 class="display-5 fw-bold mt-2">About SCRTMS (Campus Diary)</h2>
+        <p class="text-secondary mx-auto max-w-700">
+          Built according to official Software Requirements Specifications to address institution challenges by
+          replacing manual paper tracking and scattered spreadsheets with an integrated client-side system.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="about-card-box">
+            <div class="icon-box"><i class="fas fa-user-graduate"></i></div>
+            <h5 class="fw-bold">Student Module</h5>
+            <p class="text-secondary small mb-0">
+              Students receive a personalized workspace to view assigned coursework tasks with color-coded priority
+              badges, track submission deadlines, read official campus notices, and monitor lab bookings.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="about-card-box">
+            <div class="icon-box"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h5 class="fw-bold">Teacher Module</h5>
+            <p class="text-secondary small mb-0">
+              Teachers are equipped with tools to create and assign tasks to specific enrolled students, track task
+              completion percentages, upload course study notes, and publish class announcements.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="about-card-box">
+            <div class="icon-box"><i class="fas fa-user-shield"></i></div>
+            <h5 class="fw-bold">Admin Module</h5>
+            <p class="text-secondary small mb-0">
+              Administrators possess full platform supervision, user account management (CRUD operations), real-time
+              activity audit logging, resource conflict prevention, and Chart.js analytics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FEATURE SECTION
+       ========================================================================== -->
+  <section class="feature-section" id="featuresSection">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-success-subtle text-success fw-bold text-uppercase px-3 py-2 rounded-pill">Core
+          Features</span>
+        <h2 class="display-5 fw-bold mt-2">Powerful Campus Capabilities</h2>
+        <p class="text-secondary mx-auto max-w-700">Everything needed to manage academic tasks, facilities,
+          announcements, and administrative audit trails.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-item-card">
+            <div class="icon-wrapper"><i class="fas fa-tasks"></i></div>
+            <h5 class="fw-bold">Task Management</h5>
+            <p class="text-secondary small mb-0">Assign coursework, track status (Pending, In Progress, Completed), set
+              priority tags (High, Medium, Low), and enforce deadlines.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-item-card">
+            <div class="icon-wrapper"><i class="fas fa-building"></i></div>
+            <h5 class="fw-bold">Conflict-Free Booking</h5>
+            <p class="text-secondary small mb-0">Book Classrooms, Computer Labs, Science Labs, and Seminar Halls.
+              Automated conflict algorithm prevents double-booking time slots.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-item-card">
+            <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+            <h5 class="fw-bold">Notice Board</h5>
+            <p class="text-secondary small mb-0">Publish official announcements categorized by Exams, Events,
+              Maintenance, and General. Pin urgent notices to the top of the feed.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-item-card">
+            <div class="icon-wrapper"><i class="fas fa-chart-line"></i></div>
+            <h5 class="fw-bold">Analytics &amp; Audit Logs</h5>
+            <p class="text-secondary small mb-0">Chart.js visualizations for task completion rates and user
+              distribution, accompanied by real-time administrative activity audit trails.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER SECTION
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5 col-md-6">
+          <a href="index.html" class="footer-brand">
+            <i class="fas fa-book-bookmark text-primary"></i> Campus Diary
+          </a>
+          <p class="text-secondary small mt-2 pe-lg-4">
+            Smart Campus Resource &amp; Task Management System (SCRTMS) — Centralizing academic tasks, facility
+            reservations, announcements, and administration.
+          </p>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-3 offset-lg-1 footer-links">
+          <h6>Quick Links</h6>
+          <a href="index.html">Home</a>
+          <a href="about.html">About System</a>
+          <a href="features.html">Features</a>
+          <a href="login.html">Sign In</a>
+          <a href="register.html">Register</a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-3 footer-links">
+          <h6>System Modules</h6>
+          <a href="login.html">Student Task Workspace</a>
+          <a href="login.html">Teacher Assignment Portal</a>
+          <a href="login.html">Resource Booking Manager</a>
+          <a href="login.html">Campus Notice Board</a>
+          <a href="login.html">Admin Supervision &amp; Logs</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">Campus Diary &copy; 2026 • Smart Campus Resource &amp; Task Management System (SCRTMS). All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+
+</html>
